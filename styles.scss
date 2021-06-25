@@ -1,0 +1,130 @@
+$project-font: "Work Sans", sans-serif;
+$background-color: #e6e6e6;
+$link-color: #00acee;
+$content-color: #a6a6a6;
+$title-color: #0d0d0d;
+
+
+
+body {
+  background-color: $background-color;
+  
+}
+.wrapper {
+  font-family: $project-font;
+  max-width: 600px;
+  text-align: center;
+  background-color: #fafafa;
+  margin: 0 auto;
+  margin-bottom: 1.3em;
+  margin-top: 1.3em;
+  
+  
+  .text-content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+    
+    .link-content {
+      text-align: center;
+      display: inline-block;
+      padding: 1em 0;
+      text-decoration: none;
+      color: $title-color;
+      font-size: 2em;
+      font-weight: 600;
+      margin-top: 1em;
+    }
+    
+    .title-content {
+      padding: 1em;
+      font-size: 1.8em;
+      line-height: 2em;
+      
+      .highlight {
+        color: $link-color;
+        font-weight: 600;
+      }
+    }
+    
+    .subtitle-content {
+      font-size: 1.6em;
+      font-weight: bold;
+      margin-bottom: 2em;
+      margin-top: 1.4em;
+    }
+    
+    .paragraph-content {
+      font-size: 1.1em;
+      padding: 1em ;
+      display: inline-block;
+      margin-bottom: 1em;
+      margin-top: -1.8em;
+      line-height: 1.7em;
+      color: $content-color;
+    }
+  }
+  .container { 
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+    
+    .image {
+      flex-direction: column;
+      display:flex;
+      padding-bottom: 10px;
+      
+      
+      .title-img {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 0.8em;
+     }
+      
+      .description-img {
+        color: $content-color;
+      }
+      
+    .img1 {
+        background-image: url(https://st.hzcdn.com/fimgs/2d912f3a0cc74d7a_5376-w312-h312-b0-p0--farmhouse-living-room.jpg);
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+      }
+   }
+    
+    .img2{
+      background-image: url(https://i.pinimg.com/originals/b2/cd/eb/b2cdebb04c4c72069828ea3866ceb618.jpg);
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    }
+    
+    .img3 {
+      background-image: url(https://www.realestate.com.au/blog/images/800x600-fit,progressive/2018/09/04115907/cube-storage-shelf_2000x15001.jpg);
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    }
+    
+    .img4 {
+      background-image: url(https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    }
+  }
+}
